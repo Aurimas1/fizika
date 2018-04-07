@@ -1,0 +1,26 @@
+<div id="resistor-canvas"></div>
+<mat-form-field>
+    <input #resistorInput matInput placeholder="Varža(Omais)">
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="onSaveResistor(resistorInput.value)">Sukurti varžą</button>
+
+<div id="source-canvas"></div>
+<mat-form-field>
+    <input #sourceResistance matInput placeholder="Varža(Omais)">
+</mat-form-field>
+<mat-form-field>
+    <input #sourceVoltage matInput placeholder="Elektrova(Voltais)">
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="onSaveSource(sourceResistance.value, sourceVoltage.value)">Sukurti šaltinį</button>
+
+<div id="source-rev-canvas"></div>
+<mat-form-field>
+    <input #sourceRevResistance matInput placeholder="Varža(Omais)">
+</mat-form-field>
+<mat-form-field>
+    <input #sourceRevVoltage matInput placeholder="Elektrova(Voltais)">
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="onSaveSourceRev(sourceRevResistance.value, sourceRevVoltage.value)">Sukurti šaltinį</button>
+
+<div id="wire-canvas"></div>
+<button mat-raised-button color="primary" (click)="onSaveWire()">Sukurti laidą</button>

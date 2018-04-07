@@ -1,0 +1,23 @@
+<div id="canvas"></div>
+<button (click)="calculate()">Calculate</button>
+<ng-container *ngIf="items">
+    <table>
+        <tr>
+          <th>Pavadinimas</th>
+          <th>Indeksas</th>
+          <th>Varža</th>
+          <th>Srovė</th>
+          <th>Įtampa</th>
+          <th>Šaltinio įtampa</th>
+        </tr>
+      
+        <tr *ngFor="let item of items">
+          <td>{{item.name}}</td>
+          <td>{{item.index}}</td>
+          <td>{{item.resistance}}</td>
+          <td>{{item.stream}}</td>
+          <td>{{item.voltage}}</td>
+          <td>{{item.test}}</td>
+        </tr>
+      </table>
+</ng-container>
